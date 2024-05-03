@@ -1,0 +1,89 @@
+.Main_content {
+    background-image: url("https://zyan.vercel.app/images/bg/banner.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Main_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.Main_text h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.Main_text p {
+    color: #A2A2A2;
+    font-family: "Poppins", sans-serif;
+    width: 500px;
+}
+
+.Down_button button {
+    background-color: rgb(85, 230, 165);
+    padding: 20px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    transition: 0.4s;
+}
+.Down_button button:hover{
+    background-color : #141c27;
+    color: white;
+}
+
+.Down_button .play span {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.Down_button .play i {
+    background-color: rgb(85, 230, 165);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Down_button{
+    display: flex;
+    align-items:center ;
+    justify-content:center ;
+    gap: 130px;
+}
+.play{
+    display: flex;
+    align-items:center ;
+    justify-content:space-around ;
+    gap: 20px;
+}
+
+.Main_text__right{
+    height: 585px;
+    width: 526px;
+    position: relative;
+}
+
+.Main_text__right::after{
+    position: absolute;
+    content: "";
+    background-image: url("https://zyan.vercel.app/images/shapes/banner_shape.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
