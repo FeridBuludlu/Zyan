@@ -25,19 +25,6 @@
     display: block;
   }
 
-.bars{
-  background-color : rgb(85, 230, 165);
-  width: 100px;
-  height: 100px;
-}
-.bars i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10vh;
-  font-size: 35px;
-}
-
 .Main_div{
   position: fixed;
   left: 50%;
@@ -50,6 +37,7 @@
   max-width: 1320px;
   margin: 0  auto;
   width: 100%;
+  z-index: 1000;
 }
 .navbar ul{
   display: flex;
@@ -62,12 +50,101 @@
   cursor: pointer;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-size: 16px;
+
 }
 .dropdown .dropbtn{
   border: none;
   background: none;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-size: 16px;
+}
+.Button_offcanvas{
+  background-color: rgb(85, 230, 165) !important;
+  width: 100px;
+  height: 100px;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.Button_offcanvas i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: black;
+}
+.button_close{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(85, 230, 165) !important;
+  border-radius: 50% !important;
+  border: none !important;
+  color: #141c27 !important;
+}
+.button_close:hover{
+  background-color: black !important;
+  color: white !important;
+  border: none;
+}
+
+.offcanvas-header-custom{
+  background-color: #141c27;
+  padding: 30px !important;
+}
+.offcanvas_body{
+  background-color: #09101A;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+.offcanvas_body h2{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+
+}
+.offcanvas_body p{
+  color:#A2A2A2;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.offcanvas_about{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.offcanvas_form{
+  padding-top: 50px;
+  padding-left: 20px;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 22px 20px;
+  margin-bottom: 30px;
+  border: 2px solid #55e6a5;
+  background-color: #141c27;
+}
+.Submit{
+  background-color: rgb(85, 230, 165);
+  padding: 20px 40px;
+  margin: 25px 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  transition: 0.4s;
+}
+.Submit:hover {
+  background-color : #141c27;
+  color: white;
 }
